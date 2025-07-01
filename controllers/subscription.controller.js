@@ -8,7 +8,7 @@ export const createSubscription = async (req, res, next) => {
             ...req.body,
             user: req.user._id // Assuming user is authenticated and req.user is set
         })
-
+        console.log("Server url: ", SERVER_URL);
         const {workflowRunId} = await upstashWorkflowClient.trigger({
             url:`${SERVER_URL}/api/v1/workflows/subscription/reminder`, 
             body: {
