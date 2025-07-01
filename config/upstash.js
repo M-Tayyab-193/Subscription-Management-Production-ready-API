@@ -5,4 +5,5 @@ export const upstashWorkflowClient = new WorkflowClient({
   token: process.env.QSTASH_TOKEN,
 });
 
+console.log("NODE ENV:", process.env);
 console.log("QSTASH TOKEN:", process.env.QSTASH_TOKEN);
