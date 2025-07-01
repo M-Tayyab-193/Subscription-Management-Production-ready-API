@@ -5,3 +5,5 @@ export const upstashWorkflowClient = new WorkflowClient({
     base: QSTASH_URL,
     token: QSTASH_TOKEN,
 });
+
+console.log("QSTASH TOKEN: ", QSTASH_TOKEN);
