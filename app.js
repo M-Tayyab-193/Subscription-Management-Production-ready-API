@@ -28,7 +28,7 @@ app.get('/', (req, res)=>{
 })
 
 app.listen(PORT, async ()=>{
-    console.log(`Subscription Management API is running on http://localhost:${PORT}`);
+    console.log(`Subscription Management API is running on https://subscription-management-production-ready-api-production.up.railway.app`);
     await connectToDatabase();
 })
 
